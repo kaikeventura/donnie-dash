@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:3000/api/data').subscribe((data) => {
+    this.http.get<any[]>('http://donnie-dash-api:3000/api/data').subscribe((data) => {
       this.tiles = data.map((item) => {
         return {
           text: item.name,
