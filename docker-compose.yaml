@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  donnie-dash-ui:
+    container_name: donnie-dash-ui
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+
+  donnie-dash-api:
+    container_name: donnie-dash-api
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - JSON_FILE_DIR=youDir
