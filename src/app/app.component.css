@@ -8,5 +8,11 @@
 }
 
 .transparent-toolbar {
+  color: aliceblue;
   background-color: transparent;
+}
+
+.toolbar {
+  color: aliceblue;
+  background-color: rgba(128, 0, 128, 0.2);
 }
